@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.agentiezboruri_lab02mpp.controller.SearchController">
+   <children>
+      <TableView fx:id="zborTableView" layoutX="14.0" layoutY="14.0" prefHeight="372.0" prefWidth="425.0">
+         <columns>
+            <TableColumn fx:id="destinationColumn" prefWidth="118.0" text="destination" />
+            <TableColumn fx:id="dateColumn" prefWidth="109.0" text="date" />
+            <TableColumn fx:id="timeColumn" prefWidth="53.0" text="time" />
+            <TableColumn fx:id="airportColumn" prefWidth="77.0" text="airport" />
+            <TableColumn fx:id="freeSeatsColumn" prefWidth="67.0" text="free seats" />
+         </columns>
+      </TableView>
+      <Button fx:id="searchButton" layoutX="455.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleSearchButton" prefHeight="49.0" prefWidth="131.0" text="Search Flight" />
+      <Button fx:id="buyButton" layoutX="455.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleBuyButton" prefHeight="49.0" prefWidth="131.0" text="Buy Flight" />
+      <Label layoutX="482.0" layoutY="47.0" prefHeight="23.0" prefWidth="78.0" text="destinatie">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="502.0" layoutY="124.0" prefHeight="23.0" prefWidth="38.0" text="data">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicket" layoutX="455.0" layoutY="147.0" prefHeight="38.0" prefWidth="131.0" />
+      <ComboBox fx:id="destinatieComboBox" layoutX="455.0" layoutY="70.0" prefHeight="38.0" prefWidth="131.0" />
+   </children>
+</AnchorPane>

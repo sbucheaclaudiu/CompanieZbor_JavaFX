@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.agentiezboruri_lab02mpp.controller.LoginController">
+   <children>
+      <Button fx:id="loginButton" layoutX="220.0" layoutY="282.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="45.0" prefWidth="160.0" text="Login" />
+      <Label layoutX="123.0" layoutY="141.0" prefHeight="41.0" prefWidth="111.0" text="username">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="193.0" prefHeight="41.0" prefWidth="111.0" text="password">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="247.0" layoutY="139.0" prefHeight="41.0" prefWidth="176.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="150.0" layoutY="39.0" prefHeight="59.0" prefWidth="300.0" text="Agentie de turism">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="247.0" layoutY="193.0" prefHeight="41.0" prefWidth="176.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>
